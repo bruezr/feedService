@@ -1,6 +1,7 @@
 const express = require("express");
 const app = express();
 const feedRoutes = require("./routes/feedRoutes");
+const usersRoutes = require("./routes/usersRoutes");
 const dbConnection = require("./config/dbConnection");
 
 dbConnection();
@@ -16,6 +17,8 @@ app.use((req, res, next) => {
   res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
   next();
 });
+
+app.use("/api/users", usersRoutes);
 
 app.use("/api/feed", feedRoutes);
 
