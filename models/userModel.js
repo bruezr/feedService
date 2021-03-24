@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: "./.env" });
+require("dotenv").config({ path: __dirname + "/.env" });
 
 const jwtPrivateKey = process.env.JWT_PRIVATE_KEY;
+console.log("privete key is:" + jwtPrivateKey);
 
 const userShema = new mongoose.Schema({
   name: {
