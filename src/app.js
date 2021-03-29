@@ -1,22 +1,14 @@
 const express = require("express");
 const app = express();
+const cors = require("cors");
 const feedRoutes = require("./routes/feedRoutes");
 const usersRoutes = require("./routes/usersRoutes");
 const dbConnection = require("./config/dbConnection");
 
 dbConnection();
 app.use(express.json());
+app.use(cors());
 const port = process.env.PORT || 3000;
-
-app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader(
-    "Access-Control-Allow-Methods",
-    "GET, POST, PUT, PATCH, DELETE"
-  );
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
-  next();
-});
 
 app.use("/api/users", usersRoutes);
 
