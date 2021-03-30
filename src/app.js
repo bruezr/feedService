@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
-const feedRoutes = require("./routes/feedRoutes");
 const usersRoutes = require("./routes/usersRoutes");
+const authRoutes = require("./routes/authRoutes");
+const feedRoutes = require("./routes/feedRoutes");
 const dbConnection = require("./config/dbConnection");
 
 dbConnection();
@@ -11,6 +12,8 @@ app.use(cors());
 const port = process.env.PORT || 3000;
 
 app.use("/api/users", usersRoutes);
+
+app.use("/api/auth", authRoutes);
 
 app.use("/api/feed", feedRoutes);
 
