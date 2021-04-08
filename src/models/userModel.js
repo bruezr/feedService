@@ -9,20 +9,20 @@ const userShema = new mongoose.Schema({
     type: String,
     required: true,
     maxlength: 50,
-    minlenght: 5,
+    minlength: 3,
   },
   email: {
     type: String,
     required: true,
     maxlength: 255,
-    minlenght: 5,
+    minlength: 4,
     unique: true,
   },
   password: {
     type: String,
     required: true,
     maxlength: 1024,
-    minlenght: 5,
+    minlength: 5,
   },
 });
 

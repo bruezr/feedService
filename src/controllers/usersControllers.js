@@ -1,8 +1,13 @@
 const User = require("../models/userModel");
+const { userValidator } = require("../services/validator");
 const bcrypt = require("bcrypt");
 
 exports.postUser = async (req, res, next) => {
+  const validationResult = userValidator(req.body);
+
   try {
+    if (!validationResult) throw new Error("Validation Error");
+
     let user = await User.findOne({ email: req.body.email });
     if (user) return res.status(400).send("Este usuario ya esta registrado");
 
