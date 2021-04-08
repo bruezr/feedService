@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/bruezr/feedService#readme",
   "dependencies": {
+    "ajv": "^8.0.5",
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",

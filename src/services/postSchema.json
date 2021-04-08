@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "title": {
+      "type": "string",
+      "maxLength": 30,
+      "minLength": 2
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 500,
+      "minLength": 2
+    }
+  },
+  "required": ["title", "description"]
+}
