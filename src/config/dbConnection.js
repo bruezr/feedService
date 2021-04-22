@@ -1,8 +1,7 @@
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
-require("dotenv").config({ path: __dirname + "/.env" });
-
+require("dotenv").config({ path: ".env" });
 const dbConnection = async () => {
   try {
     await mongoose.connect(process.env.DB_MONGO, {
