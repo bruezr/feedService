@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const jwt = require("jsonwebtoken");
-require("dotenv").config({ path: __dirname + "/.env" });
+require("dotenv").config({ path: ".env" });
 
 const jwtPrivateKey = process.env.JWT_PRIVATE_KEY;
 
