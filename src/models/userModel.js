@@ -24,6 +24,7 @@ const userShema = new mongoose.Schema({
     maxlength: 1024,
     minlength: 5,
   },
+  date: Date,
 });
 
 userShema.methods.generateAuthToken = function () {

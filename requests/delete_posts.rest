@@ -1,2 +1,5 @@
-DELETE http://localhost:3000/api/feed/posts/6084225297da830012d2a728
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg0MjIzMDk3ZGE4MzAwMTJkMmE3MjciLCJpYXQiOjE2MTkyNzIyNDB9.LJ-N4yVT3TVwnz-1YI8CyC7tSNTz8ee7Gx1O9tEpqDo
+//Completar token y JSON
+//Completar postID y Token
+
+DELETE http://localhost:3000/api/feed/posts/
+x-auth-token: 

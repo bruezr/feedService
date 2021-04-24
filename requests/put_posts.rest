@@ -1,8 +1,10 @@
-PUT http://localhost:3000/api/feed/posts/6084225b97da830012d2a729
+//Completar postID, token y JSON
+
+PUT http://localhost:3000/api/feed/posts/postID
 Content-Type: application/json
-x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg0MjIzMDk3ZGE4MzAwMTJkMmE3MjciLCJpYXQiOjE2MTkyNzIyNDB9.LJ-N4yVT3TVwnz-1YI8CyC7tSNTz8ee7Gx1O9tEpqDo
+x-auth-token: 
 
 {
-    "title": "Tercer post en feed",
-    "description": "Hola 3"
+    "title": "",
+    "description": ""
 }
