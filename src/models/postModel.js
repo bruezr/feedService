@@ -13,6 +13,7 @@ const postSchema = new mongoose.Schema({
     maxlength: 500,
     minlenght: 2,
   },
+  date: Date,
 });
 
 module.exports = mongoose.model("Post", postSchema);

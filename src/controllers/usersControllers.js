@@ -15,6 +15,7 @@ exports.postUser = async (req, res, next) => {
       name: req.body.name,
       email: req.body.email,
       password: req.body.password,
+      date: new Date(),
     });
 
     const salt = await bcrypt.genSalt(10);
