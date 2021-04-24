@@ -1,0 +1,8 @@
+POST http://localhost:3000/api/feed/posts
+Content-Type: application/json
+x-auth-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MDg0MjIzMDk3ZGE4MzAwMTJkMmE3MjciLCJpYXQiOjE2MTkyNzIyNDB9.LJ-N4yVT3TVwnz-1YI8CyC7tSNTz8ee7Gx1O9tEpqDo
+
+{
+    "title": "Primer post en feed",
+    "description": "Hola 1"
+}
